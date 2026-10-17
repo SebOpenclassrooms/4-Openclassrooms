@@ -40,7 +40,7 @@
   &__title {
     @media (max-width: 767px) {
       @include font_w_s(700, 24);
-      padding: 48px 0px 26px 15px;
+      padding: 48px 0 26px 15px;
     }
   }
 
