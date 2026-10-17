@@ -33,9 +33,7 @@ h4 {
 }
 
 //autres
-
-@mixin flex-center{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.btn-round{
+  border-radius: 25px;
+  border: none;
 }
