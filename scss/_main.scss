@@ -53,7 +53,7 @@
     &__fonctionnement {
       @media (max-width: 767px) {
         @include flex-center;
-        @include width_height(360px, 72px);
+        @include width_height(320px, 72px);
         @include font_w_s(500, 16px);
         background: $color_grey_main;
         color: black;
@@ -65,7 +65,7 @@
       }
 
       &--texte {
-        @include font_w_s(500, 16px);
+        @include font_w_s(500, 16px);;
       }
 
       &--icone {
@@ -86,9 +86,83 @@
       &:last-child {
         margin-bottom: 68px;
       }
-
     }
   }
 }
 
+.restaurant {
+  @media (max-width: 767px) {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    background: $color_grey_main;
+  }
+
+  &__title {
+    @media (max-width: 767px) {
+      padding: 54px 0 0 20px;
+      @include font_w_s(700, 24px);
+      margin-bottom: 20px;
+
+    }
+  }
+
+  &__vignette {
+    @media (max-width: 767px) {
+      @include width_height(90%, 250px);
+      border-radius: 15px;
+      margin: auto;
+    }
+
+    &__column {
+      @media (max-width: 767px) {
+        @include width_height(100%, 100%);
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+      }
+
+      &--img {
+        @include width_height(100%, 60%);
+        border-radius: 15px;
+        object-fit: cover;
+      }
+
+      &__flexBottom {
+        @include width_height(100%, 40%);
+        display: flex;
+        justify-content: space-between;
+        background: white;
+        margin-bottom: 10px;
+        border-radius: 0 0 15px 15px;
+
+        &--left {
+          @include width_height(50%, 100%);
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          padding-left: 10px;
+        }
+
+        &--title {
+          @include font_w_s(700, 18px);
+        }
+
+        &--description {
+          @include font_w_s(300, 17px);
+        }
+
+        &__right {
+          @include width_height(20%, 100%);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          &--svg{
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+}
 

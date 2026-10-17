@@ -134,7 +134,7 @@ h4 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 360px;
+    width: 320px;
     height: 72px;
     font-weight: 500;
     font-size: 16px;
@@ -169,6 +169,81 @@ h4 {
 }
 .fonctionnement__btn__fonctionnement:last-child {
   margin-bottom: 68px;
+}
+
+@media (max-width: 767px) {
+  .restaurant {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    background: #F6F6F6;
+  }
+}
+@media (max-width: 767px) {
+  .restaurant__title {
+    padding: 54px 0 0 20px;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .restaurant__vignette {
+    width: 90%;
+    height: 250px;
+    border-radius: 15px;
+    margin: auto;
+  }
+}
+@media (max-width: 767px) {
+  .restaurant__vignette__column {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+  }
+}
+.restaurant__vignette__column--img {
+  width: 100%;
+  height: 60%;
+  border-radius: 15px;
+  object-fit: cover;
+}
+.restaurant__vignette__column__flexBottom {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  margin-bottom: 10px;
+  border-radius: 0 0 15px 15px;
+}
+.restaurant__vignette__column__flexBottom--left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 10px;
+}
+.restaurant__vignette__column__flexBottom--title {
+  font-weight: 700;
+  font-size: 18px;
+}
+.restaurant__vignette__column__flexBottom--description {
+  font-weight: 300;
+  font-size: 17px;
+}
+.restaurant__vignette__column__flexBottom__right {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.restaurant__vignette__column__flexBottom__right--svg {
+  height: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
