@@ -10,8 +10,8 @@
 }
 
 @mixin font_w_s($weight, $size) {
-  font-weight: #{$weight}px;
-  font-size: #{$size}px;
+  font-weight: $weight;
+  font-size: $size;
 }
 
 @mixin btn_gradiant_pink-purple{
