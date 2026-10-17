@@ -1,0 +1,30 @@
+.header {
+  @media (max-width: 768px) {
+    @include flex-center;
+    height: 63px;
+    margin: auto;
+    &__logo {
+      width: 162px;
+      height: 44px;
+      margin-top: 14px;
+    }
+  }
+}
+
+.header__ville {
+  @media (max-width: 768px) {
+    @include flex-center;
+    margin-top: 15px;
+    background: #EAEAEA;
+    height: 49.5px;
+    width: 100%;
+
+    &--icon {
+      @include flex-center;
+      height: 16px;
+      width: 12px;
+      margin-right: 17px;
+    }
+  }
+}
+
