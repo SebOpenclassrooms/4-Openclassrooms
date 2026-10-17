@@ -142,22 +142,23 @@
           justify-content: center;
           flex-direction: column;
           padding-left: 10px;
+
+          &--title {
+            @include font_w_s(700, 18px);
+          }
+          &--description {
+            @include font_w_s(300, 17px);
+          }
         }
 
-        &--title {
-          @include font_w_s(700, 18px);
-        }
-
-        &--description {
-          @include font_w_s(300, 17px);
-        }
 
         &__right {
           @include width_height(20%, 100%);
           display: flex;
           justify-content: center;
           align-items: center;
-          &--svg{
+
+          &--svg {
             height: 100%;
           }
         }
