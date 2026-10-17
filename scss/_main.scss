@@ -53,15 +53,19 @@
     &__fonctionnement {
       @media (max-width: 767px) {
         @include flex-center;
-        @include width_height(320px, 72px);
+        @include width_height(360px, 72px);
         @include font_w_s(500, 16px);
         background: $color_grey_main;
         color: black;
         position: relative;
         margin-bottom: 25px;
         justify-content: start;
-        padding-left: 40px;
+        padding-left: 50px;
         gap: 10px;
+      }
+
+      &--texte {
+        @include font_w_s(500, 16px);
       }
 
       &--icone {
