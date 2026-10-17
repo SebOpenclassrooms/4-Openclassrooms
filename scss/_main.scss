@@ -34,7 +34,7 @@
 
 .fonctionnement {
   @media (max-width: 767px) {
-    @include width_height(100%, 440)
+    height: 440px;
   }
 
   &__title {
@@ -63,8 +63,9 @@
         padding-left: 40px;
         gap: 10px;
       }
-      &--icone{
-        color:$primary_color
+
+      &--icone {
+        color: $primary_color
       }
 
       &--number {
