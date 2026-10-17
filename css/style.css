@@ -111,14 +111,14 @@ h4 {
 
 @media (max-width: 767px) {
   .fonctionnement {
-    width: 100px;
+    width: 100%px;
     height: 440px;
   }
 }
 @media (max-width: 767px) {
   .fonctionnement__title {
     font-weight: 700;
-    font-size: 24;
+    font-size: 24px;
     padding: 48px 0 26px 15px;
   }
 }
