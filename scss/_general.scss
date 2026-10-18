@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto Light', sans-serif;
 }
 
 img {
@@ -21,7 +22,6 @@ a:visited {
 
 h1 {
   font-weight: 400;
-  font-family: 'Shrikhand', sans-serif;
 }
 
 h3 {
@@ -33,6 +33,7 @@ h4 {
 }
 
 //autres
+
 .btn-round{
   border-radius: 25px;
   border: none;

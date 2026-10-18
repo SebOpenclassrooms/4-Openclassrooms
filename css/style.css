@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto Light", sans-serif;
 }
 
 img {
@@ -19,7 +20,6 @@ a:visited {
 
 h1 {
   font-weight: 400;
-  font-family: "Shrikhand", sans-serif;
 }
 
 h3 {
@@ -77,75 +77,61 @@ h4 {
   flex-direction: column;
   background: #F6F6F6;
 }
-@media screen and (max-width: 768px) {
-  .menu__title {
-    width: 275px;
-    height: 68px;
-    font-weight: 700;
-    font-size: 24px;
-    text-align: center;
-    margin-top: 39px;
-  }
+.menu__title {
+  width: 275px;
+  height: 68px;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 39px;
 }
-@media screen and (max-width: 768px) {
-  .menu__description {
-    width: 315px;
-    height: 46px;
-    text-align: center;
-    font-weight: 300;
-    font-size: 18px;
-  }
+.menu__description {
+  width: 315px;
+  height: 46px;
+  text-align: center;
+  font-weight: 300;
+  font-size: 18px;
 }
-@media screen and (max-width: 768px) {
-  .menu__button {
-    width: 218px;
-    height: 50px;
-    font-weight: 500;
-    font-size: 16px;
-    background: linear-gradient(to top, #9356DC, #FF79DA);
-    color: white;
-    margin-top: 27px;
-    margin-bottom: 57px;
-  }
+.menu__button {
+  width: 218px;
+  height: 50px;
+  font-weight: 500;
+  font-size: 16px;
+  background: linear-gradient(to top, #9356DC, #FF79DA);
+  color: white;
+  margin-top: 27px;
+  margin-bottom: 57px;
 }
 
-@media (max-width: 767px) {
-  .fonctionnement {
-    height: 440px;
-  }
+.fonctionnement {
+  height: 440px;
 }
-@media (max-width: 767px) {
-  .fonctionnement__title {
-    font-weight: 700;
-    font-size: 24px;
-    padding: 48px 0 26px 15px;
-  }
+.fonctionnement__title {
+  font-weight: 700;
+  font-size: 24px;
+  padding: 48px 0 26px 15px;
 }
-@media (max-width: 767px) {
-  .fonctionnement__btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
+.fonctionnement__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-@media (max-width: 767px) {
-  .fonctionnement__btn__fonctionnement {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 320px;
-    height: 72px;
-    font-weight: 500;
-    font-size: 16px;
-    background: #F6F6F6;
-    color: black;
-    position: relative;
-    margin-bottom: 25px;
-    justify-content: start;
-    padding-left: 50px;
-    gap: 10px;
-  }
+.fonctionnement__btn__fonctionnement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+  height: 72px;
+  font-weight: 500;
+  font-size: 16px;
+  background: #F6F6F6;
+  color: black;
+  position: relative;
+  margin-bottom: 25px;
+  justify-content: start;
+  padding-left: 50px;
+  gap: 10px;
 }
 .fonctionnement__btn__fonctionnement--texte {
   font-weight: 500;
@@ -171,29 +157,23 @@ h4 {
   margin-bottom: 68px;
 }
 
-@media (max-width: 767px) {
-  .restaurant {
-    display: flex;
-    align-items: start;
-    flex-direction: column;
-    background: #F6F6F6;
-  }
+.restaurant {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  background: #F6F6F6;
 }
-@media (max-width: 767px) {
-  .restaurant__title {
-    padding: 54px 0 0 20px;
-    font-weight: 700;
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
+.restaurant__title {
+  padding: 54px 0 0 20px;
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 20px;
 }
-@media (max-width: 767px) {
-  .restaurant__vignette {
-    width: 90%;
-    height: 250px;
-    border-radius: 15px;
-    margin: auto;
-  }
+.restaurant__vignette {
+  width: 90%;
+  height: 250px;
+  border-radius: 15px;
+  margin: auto;
 }
 @media (max-width: 767px) {
   .restaurant__vignette__column {
