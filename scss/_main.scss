@@ -94,26 +94,25 @@
   }
 
   &__vignette {
-    @include width_height(90%, 250px);
+    @include width_height(90%, 330px);
     border-radius: 15px;
     margin: auto;
+    margin-bottom: 20px;
 
     &__column {
-      @media (max-width: 767px) {
-        @include width_height(100%, 100%);
-        display: flex;
-        justify-content: start;
-        flex-direction: column;
-      }
+      @include width_height(100%, 100%);
+      display: flex;
+      justify-content: start;
+      flex-direction: column;
 
       &--img {
-        @include width_height(100%, 60%);
+        @include width_height(100%, 220px);
         border-radius: 15px;
         object-fit: cover;
       }
 
       &__flexBottom {
-        @include width_height(100%, 40%);
+        @include width_height(100%, 30%);
         display: flex;
         justify-content: space-between;
         background: white;
@@ -126,6 +125,7 @@
           justify-content: center;
           flex-direction: column;
           padding-left: 10px;
+          row-gap: 5px;
 
           &--title {
             @include font_w_s(700, 18px);
