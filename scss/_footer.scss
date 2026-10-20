@@ -1,0 +1,26 @@
+.footer__section {
+  background: $footer-background-color;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+
+  &__img {
+    & > img {
+      @include width_height(139px, 27px);
+      margin: 22px 0 0 25px;
+
+      svg, path {
+        fill: white;
+      }
+    }
+  }
+
+  &__texte {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.2rem;
+    font-size: 16px;
+    margin: 5% 0 5% 25px
+  }
+}

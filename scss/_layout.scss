@@ -120,7 +120,7 @@
         border-radius: 0 0 15px 15px;
 
         &--left {
-          @include width_height(50%, 100%);
+          @include width_height(55%, 100%);
           display: flex;
           justify-content: center;
           flex-direction: column;
@@ -143,7 +143,7 @@
           align-items: center;
 
           &--svg {
-            height: 100%;
+            @include btn_gradiant_pink-purple;
           }
         }
       }
