@@ -19,12 +19,14 @@
   }
 
   &__button {
+    //@include flex-center;
     @include width_height(218px, 50px);
     @include font_w_s(500, 16px);
     @include btn_gradiant_pink-purple;
     color: white;
     margin-top: 27px;
-    margin-bottom: 57px;
+    margin-bottom: 40px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 }
 
@@ -150,4 +152,3 @@
     }
   }
 }
-

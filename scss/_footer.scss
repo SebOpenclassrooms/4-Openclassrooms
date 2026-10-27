@@ -8,10 +8,8 @@
     & > img {
       @include width_height(139px, 27px);
       margin: 22px 0 0 25px;
+      filter: brightness(0) invert(1);
 
-      svg, path {
-        fill: white;
-      }
     }
   }
 
@@ -19,7 +17,7 @@
     color: white;
     display: flex;
     flex-direction: column;
-    row-gap: 0.2rem;
+    row-gap: 0.4rem;
     font-size: 16px;
     margin: 5% 0 5% 25px
   }
