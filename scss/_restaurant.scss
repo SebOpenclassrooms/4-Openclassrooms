@@ -46,6 +46,7 @@
     @media (min-width: 1024px) {
       justify-content: center;
       column-gap: 2rem;
+      margin-bottom: 2rem;
     }
 
 
@@ -70,6 +71,9 @@
     //justify-content: start;
     //flex-direction: column;
     margin-bottom: 10%;
+    @media (min-width: 1024px) {
+      margin-bottom: 2rem;
+    }
 
     &__titre {
       padding-left: 1rem;
@@ -110,13 +114,13 @@
 
         &--titre {
           font-family: roboto sans-serif;
-          @include font_w_s(500, 18px);
-          font-size: 1.5rem;
+          @include font_w_s(600, 18px);
+          //font-size: 1.5rem;
         }
 
         &--detailRecette {
           font-family: roboto sans-serif;
-          @include font_w_s(300, 1 (px));
+          @include font_w_s(200, 15px);
 
         }
 

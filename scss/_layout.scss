@@ -156,6 +156,23 @@
         @include width_height(100%, 220px);
         border-radius: 15px;
         object-fit: cover;
+        position: relative;
+
+        &--nouveau {
+          @include flex-center;
+          position: absolute;
+          height: 35px;
+          width: 95px;
+          background: blue;
+          top: 2%;
+          right: 4%;
+          color: $nouveau-plat-texte;
+          background: $nouveau-plat-background;
+        }
+
+        &--section {
+          position: relative;
+        }
       }
 
       &__flexBottom {

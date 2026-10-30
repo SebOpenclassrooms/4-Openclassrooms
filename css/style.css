@@ -126,6 +126,7 @@ h4 {
   .container__type__titre {
     justify-content: center;
     column-gap: 2rem;
+    margin-bottom: 2rem;
   }
 }
 .container__type__titre__menu {
@@ -146,6 +147,11 @@ h4 {
 }
 .container__type__menu {
   margin-bottom: 10%;
+}
+@media (min-width: 1024px) {
+  .container__type__menu {
+    margin-bottom: 2rem;
+  }
 }
 .container__type__menu__titre {
   padding-left: 1rem;
@@ -184,14 +190,13 @@ h4 {
 }
 .container__type__menu__details__recette--titre {
   font-family: roboto sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 18px;
-  font-size: 1.5rem;
 }
 .container__type__menu__details__recette--detailRecette {
   font-family: roboto sans-serif;
-  font-weight: 300;
-  font-size: 1 px;
+  font-weight: 200;
+  font-size: 15px;
 }
 .container__type__menu__details__recette--prix {
   position: relative;
@@ -448,6 +453,23 @@ h4 {
   height: 220px;
   border-radius: 15px;
   object-fit: cover;
+  position: relative;
+}
+.restaurant__vignette__column--img--nouveau {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 35px;
+  width: 95px;
+  background: blue;
+  top: 2%;
+  right: 4%;
+  color: #008766;
+  background: #99E2D0;
+}
+.restaurant__vignette__column--img--section {
+  position: relative;
 }
 .restaurant__vignette__column__flexBottom {
   width: 100%;
