@@ -153,6 +153,10 @@ h4 {
 }
 .container__type__menu__details__recette {
   padding-left: 1rem;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .container__type__menu__details__recette--titre {
   font-family: roboto sans-serif;
@@ -170,10 +174,13 @@ h4 {
 }
 .container__type__menu__details__recette--prix--valeur {
   position: absolute;
-  bottom: 10%;
-  right: 20%;
   transition: transform 400ms linear;
-  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  background: white;
+  width: 100%;
+  height: 100%;
 }
 .container__type__menu__details__recette--prix--hover {
   background: #99E2D0;
@@ -181,6 +188,14 @@ h4 {
   width: 60px;
   transition: transform 400ms linear;
   transform: translateX(100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container__type__menu__details__recette--prix--hover--icone {
+  height: 25px;
+  width: 25px;
+  filter: invert(1);
 }
 .container__type__menu__details:hover .container__type__menu__details__recette--prix--valeur {
   transform: translateX(-3.2rem);
@@ -248,12 +263,22 @@ h4 {
   text-align: center;
   margin-top: 39px;
 }
+@media (min-width: 1024px) {
+  .menu__title {
+    width: 100%;
+  }
+}
 .menu__description {
   width: 315px;
   height: 46px;
   text-align: center;
   font-weight: 300;
   font-size: 18px;
+}
+@media (min-width: 1024px) {
+  .menu__description {
+    width: 100%;
+  }
 }
 .menu__button {
   width: 218px;
@@ -270,16 +295,39 @@ h4 {
 .fonctionnement {
   height: 440px;
 }
+@media (min-width: 1024px) {
+  .fonctionnement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    height: unset;
+  }
+}
 .fonctionnement__title {
   font-weight: 700;
   font-size: 24px;
   padding: 48px 0 26px 15px;
+}
+@media (min-width: 1024px) {
+  .fonctionnement__title {
+    margin-left: -49rem;
+  }
 }
 .fonctionnement__btn {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+@media (min-width: 1024px) {
+  .fonctionnement__btn {
+    display: flex;
+    column-gap: 2rem;
+    align-items: unset;
+    justify-content: unset;
+    flex-direction: row;
+  }
 }
 .fonctionnement__btn__fonctionnement {
   display: flex;
@@ -296,6 +344,11 @@ h4 {
   justify-content: start;
   padding-left: 50px;
   gap: 10px;
+}
+@media (min-width: 1024px) {
+  .fonctionnement__btn__fonctionnement {
+    width: 284px;
+  }
 }
 .fonctionnement__btn__fonctionnement--texte {
   font-weight: 500;
@@ -327,11 +380,22 @@ h4 {
   flex-direction: column;
   background: #F6F6F6;
 }
+@media (min-width: 1024px) {
+  .restaurant {
+    flex-direction: unset;
+    flex-wrap: wrap;
+  }
+}
 .restaurant__title {
   padding: 54px 0 0 20px;
   font-weight: 700;
   font-size: 24px;
   margin-bottom: 20px;
+}
+@media (min-width: 1024px) {
+  .restaurant__title {
+    width: 100%;
+  }
 }
 .restaurant__vignette {
   width: 90%;
@@ -339,6 +403,11 @@ h4 {
   border-radius: 15px;
   margin: auto;
   margin-bottom: 20px;
+}
+@media (min-width: 1024px) {
+  .restaurant__vignette {
+    width: 45%;
+  }
 }
 .restaurant__vignette__column {
   width: 100%;
@@ -389,6 +458,15 @@ h4 {
 .restaurant__vignette__column__flexBottom__right--svg {
   width: 25px;
   height: 25px;
+}
+
+@media (min-width: 1024px) {
+  .restaurantContainer {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
+  }
 }
 
 .footer__section {

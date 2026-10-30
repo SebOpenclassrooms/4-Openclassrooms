@@ -9,6 +9,9 @@
     @include font_w_s(700, 24px);
     text-align: center;
     margin-top: 39px;
+    @media (min-width: 1024px) {
+      width: 100%;
+    }
 
   }
 
@@ -16,6 +19,10 @@
     @include width_height(315px, 46px);
     text-align: center;
     @include font_w_s(300, 18px);
+
+    @media (min-width: 1024px) {
+      width: 100%;
+    }
   }
 
   &__button {
@@ -34,14 +41,34 @@
 .fonctionnement {
   height: 440px;
 
+  @media (min-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    height: unset;
+  }
+
   &__title {
     @include font_w_s(700, 24px);
     padding: 48px 0 26px 15px;
+
+    @media (min-width: 1024px) {
+      margin-left: -49rem;
+    }
   }
 
   &__btn {
     @include flex-center;
     flex-direction: column;
+
+    @media (min-width: 1024px) {
+      display: flex;
+      column-gap: 2rem;
+      align-items: unset;
+      justify-content: unset;
+      flex-direction: row;
+    }
 
     &__fonctionnement {
       @include flex-center;
@@ -54,6 +81,10 @@
       justify-content: start;
       padding-left: 50px;
       gap: 10px;
+
+      @media (min-width: 1024px) {
+        width: 284px;
+      }
 
       &--texte {
         @include font_w_s(500, 16px);;
@@ -87,12 +118,21 @@
   align-items: start;
   flex-direction: column;
   background: $color_grey_main;
+  @media (min-width: 1024px) {
+    flex-direction: unset;
+    flex-wrap: wrap;
+
+  }
 
 
   &__title {
     padding: 54px 0 0 20px;
     @include font_w_s(700, 24px);
     margin-bottom: 20px;
+
+    @media (min-width: 1024px) {
+      width: 100%;
+    }
   }
 
   &__vignette {
@@ -100,6 +140,9 @@
     border-radius: 15px;
     margin: auto;
     margin-bottom: 20px;
+    @media (min-width: 1024px) {
+      width: 45%;
+    }
 
     &__column {
       @include width_height(100%, 100%);
@@ -151,5 +194,14 @@
         }
       }
     }
+  }
+}
+
+.restaurantContainer {
+  @media (min-width: 1024px) {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
   }
 }

@@ -83,6 +83,10 @@
 
       &__recette {
         padding-left: 1rem;
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
 
         &--titre {
           font-family: roboto sans-serif;
@@ -93,6 +97,7 @@
         &--detailRecette {
           font-family: roboto sans-serif;
           @include font_w_s(300, 1 (px));
+
         }
 
         &--prix {
@@ -100,10 +105,15 @@
 
           &--valeur {
             position: absolute;
-            bottom: 10%;
-            right: 20%;
+            //bottom: 10%;
+            //right: 20%;
             transition: transform 400ms linear;
-            z-index: 1;
+            //z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            background: white;
+            @include width_height(100%, 100%);
           }
 
           &--hover {
@@ -113,6 +123,13 @@
             transition: transform 400ms linear;
             //border-radius: 2rem 0 0 2rem;
             transform: translateX(100px);
+            @include flex-center;
+
+            &--icone {
+              height: 25px;
+              width: 25px;
+              filter: invert(1);
+            }
           }
         }
       }
