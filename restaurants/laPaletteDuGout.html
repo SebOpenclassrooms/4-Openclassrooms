@@ -10,6 +10,10 @@
         <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
               rel="stylesheet">
+        <link href="https://fonts.googleapis.com" rel="preconnect">
+        <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Shrikhand&display=swap"
+              rel="stylesheet">
         <link href="../css/style.css" rel="stylesheet">
         <title>OhMyFood - restauraznt - La Palette du Gout</title>
     </head>
@@ -29,11 +33,16 @@
             <section class="container__type">
                 <article class="container__type__titre">
                     <h1 class="container__type__titre__menu">La palette du gout</h1>
-                    <div class="container__type__titre__like">like</div>
+                    <div class="container__type__titre__like">
+                        <div class="heart-container">
+                            <i class="fa-regular fa-heart heart-empty"></i>
+                            <i class="fa-solid fa-heart heart-full"></i>
+                        </div>
+                    </div>
                 </article>
                 <article class="container__type__menu">
                     <div class="container__type__menu__titre">
-                        <div class="container__type__menu__titre--titre">entrée</div>
+                        <div class="container__type__menu__titre--titre">ENTRÉES</div>
                         <div class="container__type__menu__titre--ligne"></div>
                     </div>
                     <div class="container__type__menu__details btn-round">
@@ -48,6 +57,7 @@
                         </div>
                     </div>
                 </article>
+                <button class="menu__button menu__button__commander btn-round margin-auto">Commander</button>
             </section>
         </main>
         <footer>

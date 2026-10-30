@@ -34,8 +34,52 @@ h4 {
 
 //autres
 
-.btn-round{
+.btn-round {
   border-radius: 25px;
   border: none;
 }
 
+.margin-auto {
+  margin: 0 auto;
+}
+
+//like svg
+.heart-container {
+  position: relative;
+  @include flex_center;
+  cursor: pointer;
+  font-size: 24px;
+  width: 30px;
+  height: 30px;
+
+  .heart-empty {
+    position: absolute;
+    color: black;
+    transition: opacity 300ms ease-in-out;
+  }
+
+  .heart-full {
+    position: absolute;
+    @include btn_gradiant_pink-purple;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    //color: transparent;
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+    z-index: 33;
+  }
+
+  &:hover {
+    .heart-full {
+      opacity: 1;
+      transform: scale(1);
+      color: gray;
+    }
+
+    .heart-empty {
+      opacity: 0;
+    }
+  }
+}
