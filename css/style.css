@@ -80,9 +80,20 @@ h4 {
   object-fit: cover;
   margin-top: 2%;
 }
+@media (min-width: 1024px) {
+  .container__image {
+    max-width: 1440px;
+    height: 400px;
+  }
+}
 .container__image img {
   width: 100%;
   height: 100%;
+}
+@media (min-width: 1024px) {
+  .container__image img {
+    object-fit: cover;
+  }
 }
 
 .container__type {
@@ -95,6 +106,13 @@ h4 {
   background: #F6F6F6;
   margin-top: -5rem;
 }
+@media (min-width: 1024px) {
+  .container__type {
+    max-width: 950px;
+    margin: auto;
+    margin-top: -1rem;
+  }
+}
 .container__type__titre {
   display: flex;
   justify-content: space-between;
@@ -103,6 +121,12 @@ h4 {
   padding-top: 2rem;
   padding-left: 0.5rem;
   margin-bottom: 8%;
+}
+@media (min-width: 1024px) {
+  .container__type__titre {
+    justify-content: center;
+    column-gap: 2rem;
+  }
 }
 .container__type__titre__menu {
   font-family: "shrikhand";
@@ -294,6 +318,8 @@ h4 {
 
 .fonctionnement {
   height: 440px;
+  max-width: 300px;
+  margin: auto;
 }
 @media (min-width: 1024px) {
   .fonctionnement {
@@ -308,6 +334,7 @@ h4 {
   font-weight: 700;
   font-size: 24px;
   padding: 48px 0 26px 15px;
+  margin-left: -2rem;
 }
 @media (min-width: 1024px) {
   .fonctionnement__title {
@@ -460,6 +487,10 @@ h4 {
   height: 25px;
 }
 
+.restaurantContainer {
+  max-width: 375px;
+  margin: auto;
+}
 @media (min-width: 1024px) {
   .restaurantContainer {
     display: flex;
@@ -475,6 +506,18 @@ h4 {
   justify-content: start;
   flex-direction: column;
 }
+@media (min-width: 1024px) {
+  .footer__section {
+    flex-direction: row-reverse;
+    justify-content: end;
+    align-items: end;
+  }
+}
+@media (min-width: 1024px) {
+  .footer__section__img {
+    transform: translate(-2rem, -1rem);
+  }
+}
 .footer__section__img > img {
   width: 139px;
   height: 27px;
@@ -488,6 +531,16 @@ h4 {
   row-gap: 0.4rem;
   font-size: 16px;
   margin: 5% 0 5% 25px;
+}
+@media (min-width: 1024px) {
+  .footer__section__texte {
+    flex-direction: row;
+    column-gap: 1rem;
+    transform: translate(-3rem, 2rem);
+  }
+  .footer__section__texte > p:nth-child(2) {
+    margin-right: 2rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

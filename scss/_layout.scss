@@ -40,6 +40,8 @@
 //Fonctionnement des menus
 .fonctionnement {
   height: 440px;
+  max-width: 300px;
+  margin: auto;
 
   @media (min-width: 1024px) {
     display: flex;
@@ -52,7 +54,7 @@
   &__title {
     @include font_w_s(700, 24px);
     padding: 48px 0 26px 15px;
-
+    margin-left: -2rem;
     @media (min-width: 1024px) {
       margin-left: -49rem;
     }
@@ -198,6 +200,9 @@
 }
 
 .restaurantContainer {
+  max-width: 375px;
+  margin: auto;
+
   @media (min-width: 1024px) {
     display: flex;
     flex-wrap: wrap;
