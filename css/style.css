@@ -84,6 +84,7 @@ h4 {
   .container__image {
     max-width: 1440px;
     height: 400px;
+    margin: auto;
   }
 }
 .container__image img {
@@ -183,9 +184,6 @@ h4 {
 .container__type__menu__details__recette {
   padding-left: 1rem;
   width: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 .container__type__menu__details__recette--titre {
   font-family: roboto sans-serif;
@@ -194,7 +192,7 @@ h4 {
 }
 .container__type__menu__details__recette--detailRecette {
   font-family: roboto sans-serif;
-  font-weight: 200;
+  font-weight: 300;
   font-size: 15px;
 }
 .container__type__menu__details__recette--prix {

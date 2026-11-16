@@ -7,6 +7,7 @@
   @media (min-width: 1024px) {
     max-width: 1440px;
     height: 400px;
+    margin: auto;
   }
 
   img {
@@ -108,20 +109,16 @@
       &__recette {
         padding-left: 1rem;
         width: 100%;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
+
 
         &--titre {
           font-family: roboto sans-serif;
           @include font_w_s(600, 18px);
-          //font-size: 1.5rem;
         }
 
         &--detailRecette {
           font-family: roboto sans-serif;
-          @include font_w_s(200, 15px);
-
+          @include font_w_s(300, 15px);
         }
 
         &--prix {
