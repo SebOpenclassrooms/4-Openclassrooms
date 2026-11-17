@@ -135,6 +135,7 @@
             align-items: end;
             background: white;
             @include width_height(100%, 100%);
+            padding-bottom: 10px;
           }
 
           &--hover {
