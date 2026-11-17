@@ -532,7 +532,6 @@ h4 {
     flex-direction: row-reverse;
     justify-content: end;
     align-items: end;
-    min-height: 15vh;
   }
 }
 @media (min-width: 1024px) {
@@ -566,23 +565,22 @@ h4 {
 }
 
 .loader {
-  height: 100vh;
-  min-height: 100%;
-  width: 100vw;
   position: fixed;
-  inset: 0;
-  background: grey;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  min-height: 100%;
+  inset: 0;
+  background: grey;
   z-index: 100;
   animation: hideloader 0.5s ease 3s forwards;
 }
 .loader__tournant {
   width: 55px;
   height: 55px;
-  border: 5px solid #374151;
   border-top: 5px solid #9356DC;
   border-radius: 50%;
   animation: spin 0.8s linear infinite;
