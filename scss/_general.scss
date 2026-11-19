@@ -45,8 +45,8 @@ h4 {
 
 //like svg
 .heart-container {
-  position: relative;
   @include flex_center;
+  position: relative;
   cursor: pointer;
   font-size: 24px;
   width: 30px;

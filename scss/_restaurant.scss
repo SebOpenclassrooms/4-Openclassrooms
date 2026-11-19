@@ -81,7 +81,7 @@
       margin-bottom: 1rem;
 
       &--titre {
-        font-family: roboto sans-serif;
+        font-family: 'roboto';
         @include font_w_s(300, 16px);
         width: 2rem;
       }
@@ -94,7 +94,6 @@
     }
 
     &__details {
-      //position: relative;
       @include width_height(95%, 60px);
       display: flex;
       justify-content: space-between;
@@ -108,61 +107,65 @@
 
       &__recette {
         padding-left: 1rem;
-        width: 100%;
-
+        flex: 1;
+        min-width: 0;
+        overflow: hidden;
 
         &--titre {
-          font-family: roboto sans-serif;
-          @include font_w_s(600, 18px);
+          font-family: 'roboto';
+          @include font_w_s(500, 18px);
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
         }
 
         &--detailRecette {
-          font-family: roboto sans-serif;
+          font-family: 'roboto';
           @include font_w_s(300, 15px);
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+
+      &__recette--prix {
+        display: flex;
+        align-items: center;
+        height: 100%;
+
+        &--valeur {
+          font-family: 'roboto';
+          @include font_w_s(700, 15px);
+          display: flex;
+          align-items: flex-end;
+          padding-right: 1rem;
+          padding-bottom: 10px;
+          height: 100%;
         }
 
-        &--prix {
-          position: relative;
+        &--hover {
+          background: $slider-menu-color;
+          height: 60px;
+          width: 60px;
+          margin-right: -60px;
+          transition: margin-right 400ms ease-in-out;
+          @include flex-center;
 
-          &--valeur {
-            position: absolute;
-            //bottom: 10%;
-            //right: 20%;
-            transition: transform 400ms linear;
-            //z-index: 1;
-            display: flex;
-            justify-content: center;
-            align-items: end;
-            background: white;
-            @include width_height(100%, 100%);
-            padding-bottom: 10px;
-          }
-
-          &--hover {
-            background: $slider-menu-color;
-            height: 60px;
-            width: 60px;
-            transition: transform 400ms linear;
-            //border-radius: 2rem 0 0 2rem;
-            transform: translateX(100px);
-            @include flex-center;
-
-            &--icone {
-              height: 25px;
-              width: 25px;
-              filter: invert(1);
-            }
+          &--icone {
+            font-size: 22px;
+            color: white;
+            transition: transform 400ms ease-in-out;
           }
         }
       }
 
       &:hover {
-        .container__type__menu__details__recette--prix--valeur {
-          transform: translateX(-3.2rem);
+        .container__type__menu__details__recette--prix--hover {
+          margin-right: 0;
         }
 
-        .container__type__menu__details__recette--prix--hover {
-          transform: translateX(0);
+        .container__type__menu__details__recette--prix--hover--icone {
+          transform: rotate(360deg);
         }
       }
     }
