@@ -44,6 +44,7 @@ h4 {
 }
 
 //like svg
+
 .heart-container {
   @include flex_center;
   position: relative;
@@ -61,13 +62,13 @@ h4 {
   .heart-full {
     position: absolute;
     @include btn_gradiant_pink-purple;
-    -webkit-background-clip: text;
     background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent;
     opacity: 0;
     transform: scale(0.9);
-    transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+    transition: opacity 100ms ease-in-out, transform 300ms ease-in-out;
     z-index: 33;
   }
 
@@ -75,7 +76,6 @@ h4 {
     .heart-full {
       opacity: 1;
       transform: scale(1);
-      color: gray;
     }
 
     .heart-empty {
@@ -83,3 +83,4 @@ h4 {
     }
   }
 }
+
