@@ -63,19 +63,15 @@ h4 {
     position: absolute;
     @include btn_gradiant_pink-purple;
     background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     color: transparent;
     opacity: 0;
-    transform: scale(0.9);
-    transition: opacity 100ms ease-in-out, transform 300ms ease-in-out;
-    z-index: 33;
+    transition: opacity 100ms ease-in-out;
+    z-index: 5;
   }
 
   &:hover {
     .heart-full {
       opacity: 1;
-      transform: scale(1);
     }
 
     .heart-empty {
